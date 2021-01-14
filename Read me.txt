@@ -1,0 +1,1 @@
+Game works fine on unity remote and on phone.
