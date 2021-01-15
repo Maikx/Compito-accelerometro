@@ -582,6 +582,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2555452527217648016, guid: 75cdf6357e4c9a54bacc08aabd4e2bbd,
+        type: 3}
+      propertyPath: colorTiles
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7436256608204366112, guid: 75cdf6357e4c9a54bacc08aabd4e2bbd,
         type: 3}
       propertyPath: m_LocalPosition.x
