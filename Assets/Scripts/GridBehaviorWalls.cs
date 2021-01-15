@@ -14,14 +14,17 @@ public class GridBehaviorWalls : MonoBehaviour
 
     void Awake()
     {
+        // This takes the grid prefab and makes a grid.
         gridArray = new GameObject[columns, rows];
         if (gridPrefab)
             GenerateGrid();
+        // This warns you if the gridprefab is missing.
         else print("missing gridprefab, please assign.");
     }
 
     void GenerateGrid()
     {
+        // This generates the grid based on the amount of columns and rows set.
         for (int i = 0; i < columns; i++)
         {
             for (int j = 0; j < rows; j++)
