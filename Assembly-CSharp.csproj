@@ -66,8 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\Accelerometer.cs" />
-    <Compile Include="Assets\Scripts\GridBehaviorFloor.cs" />
-    <Compile Include="Assets\Scripts\GridBehaviorWalls.cs" />
+    <Compile Include="Assets\Scripts\GridBehavior.cs" />
     <Compile Include="Assets\Scripts\GridStatFloor.cs" />
     <Compile Include="Assets\Scripts\GridStatWalls.cs" />
     <Compile Include="Assets\Scripts\Gyroscope_S.cs" />
