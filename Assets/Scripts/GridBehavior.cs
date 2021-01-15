@@ -8,8 +8,8 @@ public class GridBehavior : MonoBehaviour
     public int rows;
     public int columns;
     public int scale;
-    public GameObject gridPrefabFloor;
-    public GameObject gridPrefabWall;
+    [SerializeField] GameObject gridPrefabFloor;
+    [SerializeField] GameObject gridPrefabWall;
 
     public Vector3 leftBottomLocationFloor = new Vector3(0, 0, 0);
     public Vector3 leftBottomLocationWall = new Vector3(0, 0, 0);
@@ -28,7 +28,7 @@ public class GridBehavior : MonoBehaviour
         if (gridPrefabFloor)
             GenerateGridFloor();
         // This warns you if the gridprefab is missing.
-        else print("missing gridprefab, please assign.");
+        else print("missing Floorprefab, please assign.");
     }
 
     void GridWallsAwake()
@@ -38,7 +38,7 @@ public class GridBehavior : MonoBehaviour
         if (gridPrefabWall)
             GenerateGridWall();
         // This warns you if the gridprefab is missing.
-        else print("missing gridprefab, please assign.");
+        else print("missing Wallprefab, please assign.");
     }
 
     void GenerateGridFloor()
