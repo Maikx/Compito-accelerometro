@@ -1,1 +1,3 @@
 Game works fine on unity remote and on phone.
+
+The only problem noticed, desyncs with the phone after a while..
