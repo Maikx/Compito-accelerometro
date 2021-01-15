@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Gyroscope_S : MonoBehaviour
 {
+    // !!!!!THIS SCRIPT IS NOT USED!!!!!
     private bool gyroEnabled;
     private Gyroscope gyro;
 

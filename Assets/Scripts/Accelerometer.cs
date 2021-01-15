@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class Accelerometer : MonoBehaviour
 {
-    private Quaternion localRotation; // 
-    public float speed = 1.0f; // ajustable speed from Inspector in Unity editor
+    private Quaternion localRotation;
+    public float speed = 1.0f;
 
-    // Use this for initialization
+
     void Start()
     {
-        // copy the rotation of the object itself into a buffer
+        // Copy the rotation of the object itself into a buffer
         localRotation = transform.rotation;
     }
 
 
-    void Update() // runs 60 fps or so
+    void Update()
     {
-        // find speed based on delta
+        // Finds the speed based on delta
         float curSpeed = Time.deltaTime * speed;
-        // first update the current rotation angles with input from acceleration axis
+        // Firstly updates the current rotation angles with input from acceleration axis
         localRotation.y += Input.acceleration.x * curSpeed;
         localRotation.x += Input.acceleration.y * curSpeed;
 
-        // then rotate this object accordingly to the new angle
+        // Then rotates this object accordingly to the new angle
         transform.rotation = localRotation;
 
     }
