@@ -15,6 +15,7 @@ public class GridStatWalls : MonoBehaviour
 
     private void RemoveWall()
     {
+        // This sets the tiles that shouldn't be ingame.
         if (x < 9 && y < 9 && y != 0 && x != 0)
         {
             gameObject.SetActive(false);
