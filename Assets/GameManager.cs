@@ -16,13 +16,13 @@ public class GameManager : MonoBehaviour
     {
         int amount = 0;
 
-        for (int i = 0; i < m_Cubes.Length; i++)
-        {
-            if (m_Cubes[i].GetComponent<Renderer>().material.color == Color.magenta)
-            {
-                amount++;
-            }
-        }
+        //for (int i = 0; i < m_Cubes.Length; i++)
+        //{
+            //if (m_Cubes[i].GetComponent<Renderer>().material.color == Color.magenta)
+            //{
+                //amount++;
+            //}
+        //}
 
         if (amount >= colorTiles)
         {
